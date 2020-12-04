@@ -24,7 +24,7 @@ type Map struct {
     lock     sync.RWMutex
 }
 
-func KKMap() *Map {
+func NewMap() *Map {
     return &Map{
         positive: map[interface{}]KKobject{},
         negative: map[interface{}]KKobject{},

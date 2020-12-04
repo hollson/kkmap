@@ -28,7 +28,7 @@ func (t *TcpPacket) Key2() interface{} {
 }
 
 func mmobj() *Map {
-    kk := KKMap()
+    kk := NewMap()
     kk.Set(&TcpPacket{
         UUID:      "1001",
         RemoteUrl: "127.0.0.1:8801",
